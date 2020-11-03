@@ -99,11 +99,11 @@ font-size 50px
 		margin-bottom: 20px
 		flex-wrap nowrap
 		//align-items: flex-start
+	fw()
 	position: relative
 	font-weight: 700
 	margin-bottom: 30px
 	f()
-	fw()
 	align-items center
 	.icon
 		+below(768px)
@@ -117,18 +117,22 @@ font-size 50px
 		+below(640px)
 			width: 100%
 			margin-right: 0
-		margin-bottom: 0
+			margin-bottom: 0
 		margin-right: 20px
-		margin-top: -5px
+		//margin-top: -5px
 		position relative
+		margin-bottom: 20px
 	.arrow
 		+below(640px)
 			display none
 		fill $yellow
 		margin-right: 25px
+		margin-bottom: 20px
 	.btn--sm
 		+below(640px)
 			width: 100%
+			margin-bottom: 0
+		margin-bottom: 20px
 .arrow
 	flex(mid)
 	round()

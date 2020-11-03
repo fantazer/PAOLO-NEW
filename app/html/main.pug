@@ -40,7 +40,7 @@ include block_html/_include.pug
 				//новинка = bg:#61D100
 				- for (var i=0;i< 7;i++)
 					+product("item-3.jpg")
-	.sale-wrap
+	//.sale-wrap
 		.main-cont
 			.sale
 				.sale-slider-wrap
@@ -57,6 +57,55 @@ include block_html/_include.pug
 						p * При себе необходимо иметь документ, в котором указана дата вашего Дня рождения.
 
 						p ** Скидка НЕ суммируется с другими скидками («Счастливые часы», «Красная цена») и НЕ действует на блюда из разделов: Бизнес-Ланчи, Завтраки, Детское..
+	.section.section--gray
+		.main-cont
+			.title.title--lg Акции
+			.sale-list.sale-list--sm
+				- for (var i=0;i<4;i++)
+					a(href="#").sale-list__el
+						.sale-list__el-img(style="background-image:url('img/sale-list-" + (i + 1) + ".jpg')")
+	.section
+		.main-cont
+			.advant
+				.advant__el
+					.advant__el-img
+						img(src="img/chef.svg", alt="")
+					.advant__el-text Делаем пиццу за 5 минут
+				.advant__el
+					.advant__el-img
+						img(src="img/pizza-slice.svg", alt="")
+					.advant__el-text Лучшее тесто для пиццы
+				.advant__el
+					.advant__el-img
+						img(src="img/carrot.svg", alt="")
+					.advant__el-text Всегда свежие продукты
+				.advant__el
+					.advant__el-img
+						img(src="img/love.svg", alt="")
+					.advant__el-text Всегда свежие продуктыа
+	.section
+		.main-cont
+			.title.title--lg Отзывы
+			.review--sm
+				- for (var i=0;i<3;i++)
+					.review__el.review__el--border
+						.review__el-name Екатерина
+						.review__rating
+							.star
+								.star-el.star-el--active
+									+icon("star","icon")
+								.star-el.star-el--active
+									+icon("star","icon")
+								.star-el.star-el--active
+									+icon("star","icon")
+								.star-el.star-el--active
+									+icon("star","icon")
+								.star-el
+									+icon("star","icon")
+						.review__el-date 14 марта 2019 21:49
+						.review__el-text Огромное спасибо! Заказываю у Вас 1-й раз. Порадовало всё, начиная с рриятного молодого человека, который приехал на 10 мин. раньше заявленного срока. Аккуратная и удобная фирменная упаковка
+
+
 	// seo text
 	.section
 		.main-cont
@@ -78,6 +127,8 @@ include block_html/_include.pug
 				span.type--sm.type--false Показать еще
 				span.type--sm.type--true Скрыть
 				+icon("arrow-down","icon icon--sm icon--gray icon--left")
+
+
 	// seo text === end
 	+footer()
 include ./block_html/_script.pug

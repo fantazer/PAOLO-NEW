@@ -169,11 +169,13 @@ body
 		padding: 20px
 		overflow-y scroll
 		width: 95%!important
-		margin: 20px auto
+	margin: 20px auto
 	background: white
 	position: relative
 	padding: 40px 45px
 	br(25px)
+
+
 
 .modal__show
 	max-height 100%
@@ -233,6 +235,9 @@ body
 	text-align: center
 	@extend .type--lg
 	font-weight: 700
+
+.modal-title--left
+	text-align: left
 
 .modal-title--clear
 	margin-bottom: 0
@@ -1028,7 +1033,7 @@ body
 		cp()
 		tr()
 		size 20px
-		fill $yellow
+		fill $orange
 		&:hover
 			fill $mark
 
@@ -1344,7 +1349,7 @@ body
 	align-items: stretch
 	a
 		&:hover
-			color $mark!important
+			color $orange!important
 .footer-clear
 	margin-top: 20px
 .footer-comp
@@ -1359,7 +1364,7 @@ body
 		margin-bottom: 20px
 		tr(all)
 		&:hover
-			color $yellow
+			color $orange
 .get-pay
 	+below(720px)
 		display: none
@@ -1397,8 +1402,7 @@ body
 	color #888987
 	display: block
 	tr(all)
-	&:hover
-		color $yellow
+
 .footer-call
 	+below(1280px)
 		width: 50%
@@ -1433,7 +1437,7 @@ body
 	font-weight 600
 	tr(all)
 	&:hover
-		color $yellow
+		color $orange
 .footer-mail
 	+below(768px)
 		margin-bottom: 10px
@@ -1442,7 +1446,7 @@ body
 	color white
 	tr(all)
 	&:hover
-		color $yellow
+		color $orange
 .footer-company
 	color #ffffff
 	@extend .type--lg
@@ -2080,6 +2084,16 @@ body
 	display: grid
 	grid-gap 30px
 	grid-template-columns: 1fr 1fr
+
+.sale-list--sm
+	+below(640px)
+		grid-gap 20px
+		grid-template-columns: 1fr
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(4,1fr)
+
+
 .sale-list__el
 	display block
 .sale-list__el-img
@@ -2844,6 +2858,9 @@ l
 		padding: 30px 0
 	padding: 50px 0
 
+.section--gray
+	background: #f5f5f5
+
 .toggle-seo
 	cp()
 	.icon
@@ -2900,17 +2917,25 @@ l
 	+below(768px)
 		column-count 1
 	column-count 2
-	column-gap 40px
+	column-gap 20px
+.review--sm
+	+below(768px)
+		grid-template-columns: 1fr
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(3, 1fr)
+	.review__el
+		margin-bottom: 0
 .review__el
 	+below(640px)
 		padding: 20px
 		margin-bottom: 20px
-	background: #f9f9f9
 	padding: 30px
-	margin-bottom: 40px
+	margin-bottom: 20px
 	display: inline-block
 	width: 100%
 	br(10px)
+	border 1px solid $border-color
 .review__el-head
 	f()
 	margin-bottom: 10px
@@ -2936,10 +2961,10 @@ l
 	color $gray
 	font-weight 300
 	@extend .type--sm
+	margin:10px 0 20px 0
 .review__el-text
 	+below(640px)
 		padding-left: 0
-	padding-left: 80px
 	line-height: 1.8
 	p
 		font-size: 14px
@@ -2948,3 +2973,220 @@ l
 	flex(mid)
 	margin: 20px 0
 // review === end
+
+// advant
+.advant
+	+below(768px)
+		grid-template-columns: repeat(2, 1fr)
+	display: grid
+	grid-gap 20px
+	grid-template-columns: repeat(4, 1fr)
+.advant__el
+	flex(mid)
+	fl()
+.advant__el-img
+	margin-bottom: 20px
+.advant__el-text
+	text-align center
+	max-width 200px
+	font-weight: 700
+	@extend .type--md
+	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+// advant === end
+
+// city modal
+.city
+	margin-bottom: 35px
+.city-search
+	+below(768px)
+		width: 100%
+	f()
+	margin-bottom: 20px
+	width: 50%
+	align-items center
+	position relative
+	.input
+		transition initial
+		width: 100%
+		margin-right: 20px
+		br(0)
+		border 0
+		border-bottom 1px solid $border-color
+		padding 10px 40px 10px 0
+		background: white
+.city-search--active
+	.input
+		padding-left: 30px
+	.city-remove
+		display block
+.city-remove
+	position absolute
+	left 0
+	top 20px
+	display none
+	cp()
+	.icon
+		&:hover
+			fill $mark
+		fill white
+		tr()
+		size 15px
+
+.city-popular
+	+below(640px)
+		margin-bottom: 10px
+	f()
+	fw()
+	margin-bottom: 35px
+.city-popular__el
+	cp()
+	tr()
+	@extend .type--md
+	margin-right: 20px
+	margin-bottom: 10px
+	font-weight 700
+	up()
+	&:hover
+		color $mark
+
+// list
+.city-list
+	+below(1024px)
+		column-count 3
+	+below(768px)
+		column-count 2
+	+below(640px)
+		padding-bottom: 20px
+		overflow-y auto
+	column-count 3
+	padding-bottom: 40px
+.city-wrap
+	+below(768px)
+		height: 100%
+	height: 400px
+	position relative
+	overflow scroll
+	margin-top: 40px
+.city-list-col
+	f()
+	margin-bottom: 10px
+	align-items:flex-start
+
+.city-list-letter
+	+below(640px)
+		margin-right: 10px
+		size 20px
+		font-size:14px
+	color $mark
+	margin-right: 30px
+	@extend .type--lg
+	font-weight 700
+//.city-list-list
+.city-list-el
+	+below(640px)
+		font-size: 12px
+	margin-bottom: 10px
+	display: block
+	@extend .type--md
+	&:hover
+		color $red
+.city-list-el--active
+	font-weight: 700
+
+.search__icon
+	position absolute
+	top calc(50% - 12px)
+	right: 36px
+	cp()
+	flex(mid)
+	.icon
+		&:hover
+			fill $mark
+		tr()
+		size 24px
+
+.search--active
+	.icon--true
+		animateShow()
+		transform rotate(180deg)
+		transition opacity .4s, transform .6s
+	.icon--false
+		animateHide()
+		transition opacity .4s, transform .6s
+
+.modal--city
+	.modal-content
+		+below(768px)
+			padding: 20px
+		padding: 40px 0 0 40px
+
+.city-current
+	cp()
+	margin-bottom: 20px
+	&:hover
+		color red
+		.icon
+			fill red
+// city modal === end
+
+
+// area modal
+.area-map
+	+below(640px)
+		width: 100%
+	height: 500px
+	position relative
+	flex(mid)
+	width calc(100% + 90px)
+	margin 20px 0 -45px -45px
+.area-tool-list
+	max-height: 400px
+	overflow hidden
+	position relative
+.area-map__el
+	position absolute
+	width: 100%
+	height: 100%
+	top 0
+	left 0
+	background: $gray
+
+.area-msg-layer
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+	flex(mid)
+.area-msg__text
+	line-height: 1.6
+	margin-bottom: 20px
+	span
+		display inline-block
+		font-weight: 700
+	p
+		&:first-child
+			margin-top: 0
+		margin: 5px 0
+		font-size: 14px
+.area-msg
+	background: white
+	padding: 20px
+	width 450px
+	br(10px)
+.area-msg-nav
+	f()
+	fw()
+	align-items center
+	.btn--sm
+		margin-right: 10px
+		+below(768px)
+			margin 0 0 10px 0
+
+// area modal === end
+
+.deliver-other
+	flex(mid)
+	fl()
+	img
+		margin-bottom: 10px
