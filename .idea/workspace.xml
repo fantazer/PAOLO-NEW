@@ -10,8 +10,34 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix scroll modal macOS">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="deploy version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/_helper.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/_helper.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/basket.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/basket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/catalog.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/catalog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/deliver.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/deliver.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/form.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/form.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/review-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/review-list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/sale-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/sale-item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/sale-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/sale-list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/screen/app/vacancy.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/vacancy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/basket.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/basket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/catalog.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/catalog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/deliver.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/deliver.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/form.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/form.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/item.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/review-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/review-list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/sale-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/sale-item.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/sale-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/sale-list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/success.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/vacancy.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/vacancy.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +64,7 @@
     <property name="SearchEverywhereHistoryKey" value="clone&#9;ACTION&#9;Git.Clone" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/app/bower/jquery/src/css/var/rmargin.js&#10;true&#10;E:/PROJECT/WORK/GIGANT/app/bower/slick-carousel/slick/slick-theme.css" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -51,6 +78,17 @@
       <recent name="E:\PROJECT\WORK\PAOLO-NEW\app" />
       <recent name="E:\PROJECT\WORK\GIGANT\app\img\svg" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -213,13 +251,10 @@
       <workItem from="1605887360278" duration="2040000" />
       <workItem from="1606412759713" duration="590000" />
       <workItem from="1606753629710" duration="602000" />
-    </task>
-    <task id="LOCAL-00020" summary="add modal + bsh-hover()">
-      <created>1557691407230</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1557691407230</updated>
+      <workItem from="1606816225726" duration="3289000" />
+      <workItem from="1606898379408" duration="918000" />
+      <workItem from="1607350162858" duration="1089000" />
+      <workItem from="1607593636532" duration="172000" />
     </task>
     <task id="LOCAL-00021" summary="add mixin font()">
       <created>1559217228735</created>
@@ -557,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605524067458</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="deploy version">
+      <created>1606816366845</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1606816366846</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -602,7 +644,6 @@
     <MESSAGE value="up version v 1.7.1" />
     <MESSAGE value="fix windows config" />
     <MESSAGE value="fix styles" />
-    <MESSAGE value="deploy version" />
     <MESSAGE value="fix modals + cookie" />
     <MESSAGE value="fix cookier" />
     <MESSAGE value="add soc-fl icon" />
@@ -623,72 +664,7 @@
     <MESSAGE value="add fixes" />
     <MESSAGE value="fix title row extend" />
     <MESSAGE value="fix scroll modal macOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix scroll modal macOS" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1753" y="-40" key="CommitChangelistDialog2" timestamp="1605524065364">
-      <screen x="-2560" y="-193" width="2560" height="1400" />
-    </state>
-    <state x="-1753" y="-40" key="CommitChangelistDialog2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1605524065364" />
-    <state x="-1753" y="-103" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1601556871855" />
-    <state x="-1753" y="-40" key="CommitChangelistDialog2/0.-1080.2560.1040/0.0.1920.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1603818591231" />
-    <state x="-1753" y="-40" key="CommitChangelistDialog2/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1604408054945" />
-    <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1601633096363" />
-    <state x="-2174" y="-68" key="DiffContextDialog" timestamp="1603818576228">
-      <screen x="-2560" y="-193" width="2560" height="1400" />
-    </state>
-    <state x="-2174" y="-68" key="DiffContextDialog/0.-1080.2560.1040/0.0.1920.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1603818576228" />
-    <state x="-1478" y="321" key="FileChooserDialogImpl" timestamp="1600632836578">
-      <screen x="-2560" y="-256" width="2560" height="1400" />
-    </state>
-    <state x="-1478" y="321" key="FileChooserDialogImpl/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1600632836578" />
-    <state x="-1407" y="408" key="Github.ShareDialog" timestamp="1604324700642">
-      <screen x="-2560" y="-193" width="2560" height="1400" />
-    </state>
-    <state x="-1407" y="408" key="Github.ShareDialog/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1604324700642" />
-    <state x="-1407" y="345" key="Github.ShareDialog/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1600086595359" />
-    <state x="-1446" y="228" key="Github.UntrackedFilesDialog" timestamp="1604324717404">
-      <screen x="-2560" y="-193" width="2560" height="1400" />
-    </state>
-    <state x="-1446" y="228" key="Github.UntrackedFilesDialog/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1604324717404" />
-    <state x="-1446" y="165" key="Github.UntrackedFilesDialog/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1600086606901" />
-    <state x="-1779" y="150" key="SettingsEditor" timestamp="1604324676066">
-      <screen x="-2560" y="-193" width="2560" height="1400" />
-    </state>
-    <state x="-1779" y="150" key="SettingsEditor/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1604324676066" />
-    <state x="-1779" y="87" key="SettingsEditor/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1600086573487" />
-    <state x="-1779" y="87" key="SettingsEditor/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1597054358809" />
-    <state x="-2560" y="-193" key="Vcs.Push.Dialog.v2" timestamp="1605524075149">
-      <screen x="-2560" y="-193" width="2560" height="1400" />
-    </state>
-    <state x="-2560" y="-193" key="Vcs.Push.Dialog.v2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1605524075149" />
-    <state x="-2115" y="45" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1601556879206" />
-    <state x="-2560" y="-193" key="Vcs.Push.Dialog.v2/0.-1080.2560.1040/0.0.1920.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1603818594522" />
-    <state x="-2560" y="-193" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1604408063867" />
-    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1601633103666" />
-    <state x="-2468" y="-164" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601630424637">
-      <screen x="-2560" y="-256" width="2560" height="1400" />
-    </state>
-    <state x="-2468" y="-164" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1601630424637" />
-    <state x="-1468" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601555020778">
-      <screen x="-2560" y="-256" width="2560" height="1400" />
-    </state>
-    <state x="-1468" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1601555020778" />
-    <state x="-1661" y="152" width="763" height="710" key="find.popup" timestamp="1604832048321">
-      <screen x="-2560" y="-193" width="2560" height="1400" />
-    </state>
-    <state x="-1661" y="152" width="763" height="710" key="find.popup/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1604832048321" />
-    <state x="-1662" y="90" width="762" height="709" key="find.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1600780822249" />
-    <state x="674" y="257" width="572" height="527" key="find.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@0.0.1920.1040" timestamp="1601978696432" />
-    <state x="-1661" y="152" width="763" height="710" key="find.popup/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1604406727640" />
-    <state x="-1661" y="90" width="762" height="709" key="find.popup/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1601373258698" />
-    <state x="943" y="-846" width="672" height="504" key="search.everywhere.popup" timestamp="1604408489632">
-      <screen x="0" y="-1080" width="2560" height="1040" />
-    </state>
-    <state x="-1617" y="122" width="672" height="678" key="search.everywhere.popup/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1604338922584" />
-    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1600953735554" />
-    <state x="-1617" y="122" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1604406551602" />
-    <state x="943" y="-846" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@0.-1080.2560.1040" timestamp="1604408489632" />
-    <state x="-1617" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1601374010994" />
+    <MESSAGE value="deploy version" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy version" />
   </component>
 </project>
