@@ -1061,6 +1061,13 @@ body
 	@extend .type--lg
 	font-weight 600
 	margin-right: 10px
+
+.product-price--false
+	color red
+	font-size: 14px
+	text-decoration: line-through
+
+
 .product-condition
 	color $gray
 	@extend .type--xs
@@ -1118,6 +1125,8 @@ body
 
 // size
 .size
+	+below(640px)
+		width: 100%
 	display: grid
 	grid-gap 0
 	grid-template-columns: repeat(auto-fit, minmax(3rem,1fr))
@@ -1175,6 +1184,7 @@ body
 .size__el
 	+below(480px)
 		font-weight:700
+		width: 100%
 	cp()
 	tr()
 	font-size: 14px
@@ -1507,9 +1517,24 @@ body
 .item-size
 	margin-bottom: 30px
 .item-config-row
-	margin-bottom: 30px
+	margin-bottom: 15px
+	padding: 12px 20px
+	border 1px solid $border-color
+	br(24px)
 	.title
-		margin-bottom: 20px
+		margin-bottom: 0
+.item-config-row-head
+	flex(between)
+	cp()
+	.icon
+		tr()
+		size 16px
+	&.active
+		.icon
+			fill $mark
+			transform rotate(45deg)
+.item-config-row-content
+	margin-top: 20px
 
 .item-prop
 	+below(640px)
@@ -1559,6 +1584,8 @@ body
 	@extend .type--sm
 	&:first-child
 		padding-top: 0
+	&:last-child
+		border-bottom 0
 
 .ingr-row--disable
 	position relative
@@ -3197,3 +3224,49 @@ l
 
 .main-slider.slick-initialized .main-slider__el-wrap:not(:first-child)
 	visibility: visible
+
+
+// tags filter
+.tag-wrap
+	margin-bottom: 30px
+
+.tag
+	+below(640px)
+		margin-bottom: 0
+	f()
+	fw()
+	align-items center
+.tag-el
+	padding: 8px 20px
+	background: white
+	box-shadow 0 3px 9px rgba(0, 0, 0, 0.1)
+	border-radius 15px
+	margin: 5px 10px 5px 0
+	border-bottom 1px solid transparent
+	cp()
+	tr()
+	f()
+	align-items center
+.tag-el--active
+	box-shadow 0 0 0
+	background: $mark
+	color white
+	.tag-el__icon
+		display block
+//.tag-el__name
+
+.tag-el__icon
+	display none
+	.icon
+		margin-left: 10px
+		size 10px
+		fill white
+
+.filter-false
+	@extend .type--xl
+	font-weight: 700
+	color $gray
+	width: 100%
+	grid-column: 1/4
+
+// tags filter === end

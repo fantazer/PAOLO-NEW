@@ -34,8 +34,8 @@ mixin incr(state,className='')
     .incr__plus.incr__nav
       +icon("plus","icon")
 
-mixin product(img="item-2.jpg")
-  .product-el
+mixin product(img="item-2.jpg",type)
+  .product-el(data-condition=type)
     a(href="#").product__img
       .product__img-el(style="background-image:url('img/"+img+"')")
       .product-el-tag-wrap
@@ -43,7 +43,7 @@ mixin product(img="item-2.jpg")
       .product-el--add
         +icon("cart-empty","icon")
     .product__cont
-      a(href="#").product__title Макси маки
+      a(href="#").product__title Пицца Чоризо
       .product-condition 280-350 гр
       a(href="#").product__descr Классические роллы с начикой на ваш выбор, с нежной сливочной шапочкой из сыра филадельфия
       .size
@@ -74,6 +74,7 @@ mixin product(img="item-2.jpg")
           .style-input-text с кокосовой стружкой
       .product-footer
         .product-footer__info
+          .product-price.product-price--false 310 р
           .product-price 280 р
         .product-get.incr-btn
           .incr-btn__el.btn--sm.btn--mark Заказать

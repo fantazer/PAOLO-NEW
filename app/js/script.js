@@ -438,14 +438,15 @@ $(document).ready(function () {
 	//console.log("Минимум:",minAdds);
 	//console.log("Максимум:",maxAdds);
 	var isLimitVal = 0;
-	$('.js-ingr-wrap').each(function() {
+	$(' .js-ingr-wrap').each(function() {
 		isLimitVal += $(this).data("min");
 	})
 	isLimitVal === 0 ? $(".item-total").removeClass("item-total--disable") : false
 
 	$('.js-ingr-wrap .incr__nav').click(function(){
 		var isAllCheck = 0
-		$('.js-ingr-wrap').each(function(){
+		var parent = $(this).closest('.js-switch-cont');
+		parent.find('.js-ingr-wrap').each(function(){
 			var currentSizeAdds = 0;
 			var minAdds = $(this).data("min");
 			var maxAdds = $(this).data("max");
@@ -473,9 +474,9 @@ $(document).ready(function () {
 		})
 		//console.log(window.isAllCheck.state);
 		if(isAllCheck===0){
-			$(".item-total").removeClass("item-total--disable");
+			parent.find(".item-total").removeClass("item-total--disable");
 		}else{
-			$(".item-total").addClass("item-total--disable");
+			parent.find(".item-total").addClass("item-total--disable");
 		}
 	});
 	// calc adds === end
@@ -486,6 +487,47 @@ $(document).ready(function () {
 		$('.ingr-row .incr').removeClass('incr--single-active');
 		$('.item-total').addClass('item-total--disable');
 	}
+
+	// toggle ingr drop
+	$('.js-item-config-row-head').click(function(){
+		$(this).closest('.js-ingr-wrap').find('.js-item-config-row-content').slideToggle()
+	});
+	// toggle ingr drop === end
+
+	// toggle tags
+	$('.tag-el').click(function(){
+		$(this).toggleClass("tag-el--active");
+	});
+	// toggle tags === end
+
+	// toggle items type
+	$('.tag-el').click(function(){
+		var filterType = [];
+		var parent = $(this).closest(".content");
+		var emptyItem = parent.find(".filter-false");
+		parent.find('.tag-el--active').each(function(){
+			if($(this).data("condition")!="all") {
+				filterType.push($(this).data("condition").toString());
+			}
+		});
+		var strfilterType = filterType.sort().join(' ');
+		var filterItem = [];
+		parent.find(".product-el").each(function(){
+			var current = $(this);
+      current.addClass("hidden");
+      console.log(current.data("condition"));
+			filterItem = current.data("condition").toString().split(' ').sort().join(' ');
+			if(filterItem.indexOf(strfilterType)!=-1){
+				current.removeClass("hidden");
+			}
+		});
+		if(parent.find(".product-el:not(.hidden)").length<1){
+			emptyItem.removeClass("hidden");
+		}else{
+			emptyItem.addClass("hidden");
+		}
+	});
+	// toggle items type === end
 
 	window.resetItemMethods = resetItemIngr;
 	//window.condition = {};
